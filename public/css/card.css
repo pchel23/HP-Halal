@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.product-modal {
+    width: 75%;
+    height: 85vh;
+    background-color: #b2c94e;
+    border-radius: 10px;
+    padding: 20px;
+    color: #ffffff;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: -7px;
+    right: 0px;
+    color: #a03c3c;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-image-placeholder {
+    width: 100%;
+    height: 40vh;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-position: center;
+}
+
+.product-info {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.product-info h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.product-info p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.addons-title {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.addon-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 12px;
+}
+
+
+.addon-dots {
+    flex-grow: 1;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.7);
+    margin: 0 8px;
+    position: relative;
+    top: -4px;
+}
+
+.addon-price {
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+.addon-checkbox {
+    width: 24px;
+    height: 24px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.add-btn {
+    background-color: #e59a2f;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 20px;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+

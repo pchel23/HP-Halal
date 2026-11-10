@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e59a2f;
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #8b2a2a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-item {
+    border:none;
+    padding: 18px 20px;
+    border-bottom: 1px solid #e59a2f;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    background-color: #ffffff00;
+    width: 100%;
+    text-align: start;
+}
+.sidebar-item-role {
+    padding: 18px 20px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+
+}
+.sidebar-item.active {
+    background-color: #e5992f;
+    color: #8b2a2a;
+    font-weight: bold;
+}
+
+.sidebar-item:hover {
+    background-color: #b2c94e;
+    color: #fff;
+    font-weight: bold;
+}
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title {
+    color: #8b2a2a;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.page-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #8b2a2a;
+    background: transparent;
+    color: #8b2a2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+.page-btn.active {
+    background-color: #8b2a2a;
+    color: #fff;
+}
+
+.add-btn {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #b2c94e;
+    color: #fff;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
