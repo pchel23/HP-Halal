@@ -53,14 +53,14 @@ class HomeController extends Controller
         if(Auth::attempt($valid)){
             $request->session()->regenerate();
 
-            switch(Auth::user()->role){
-                case 'user':
-                    return redirect()->route('index');
-                    
-                case 'admin':
-                    return redirect()->route('category');
-            }
-            
+           switch(Auth::user()->role){
+    case 'user':
+        return redirect()->route('index');
+
+    case 'admin':
+        return redirect()->route('admin.categories');
+}
+
         }
 
         return back()->withErrors([

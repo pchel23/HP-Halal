@@ -3,7 +3,7 @@
 @section('content')
     <h2>Создание категории</h2>
 
- <form method="post" action="{{ route('admin.category.store') }}">
+<form method="post" action="{{ route('admin.point.store') }}">
 
         @csrf
         <div class="input-group">
