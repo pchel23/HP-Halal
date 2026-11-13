@@ -11,7 +11,7 @@
 
         <div class="input-group">
             <label class="input-label">Адрес точки</label>
-            <input type="text" name="point_address" class="input-field" value="{{ old('point_address', $point->point_address) }}">
+            <input type="text" name="point_address" class="input-field" value="{{ old('point_address', $point->address) }}">
             @error('point_address')
                 <span class="error-message">{{ $message }}</span>
             @enderror
@@ -21,10 +21,9 @@
             @error('admin_phone')
                 <span class="error-message">{{ $message }}</span>
             @enderror
-        </div>
 
-        <div class="form-actions" style="margin-top: 20px;">
-            <button type="submit" class="add-btn" style="padding: 10px 20px; cursor: pointer;">Сохранить изменения</button>
-            <a href="{{ route('admin.points') }}" style="margin-left: 10px;">Отмена</a>
+            <button class="btn-form" type="submit" class="add-btn">Сохранить изменения</button>
+
         </div>
     </form>
+@endsection

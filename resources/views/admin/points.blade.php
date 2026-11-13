@@ -14,7 +14,7 @@
                  <span>{{ $point->phone_admin }}</span>
             </div>
             <div class="item-actions">
-                 <a href="{{ route('admin.point.edit', $point->id) }}" class="btn-edit" style="text-decoration: none; padding: 5px 10px; display: inline-block;">Редактировать</a>
+                 <a href="{{ route('admin.point.edit', $point->id) }}" class="btn-edit">Редактировать</a>
                <form action="{{ route('admin.point.delete', $point->id) }}" method="POST">
         @csrf
         @method('DELETE')

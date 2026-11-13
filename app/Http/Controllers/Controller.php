@@ -20,9 +20,9 @@ class Controller extends BaseController
         switch(Auth::user()->role){
             case 'user':
                 return view('index');
-                    
+
             case 'admin':
-                return redirect()->route('category');
+                return redirect()->route('admin.index');
         }
     }
 

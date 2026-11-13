@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{asset('css/form-admin.css')}}">
 </head>
 <body>
-    <a href="" class="back-btn">НАЗАД</a>
+    <a href="{{session('admin_back_url', url('/admin'))}}" class="back-btn">НАЗАД</a>
 </body>
 </html>
 <div class="form-box">

@@ -43,7 +43,7 @@ class HomeController extends Controller
 
     public function login(Request $request){
         $valid = $request->validate([
-            'email' => ['required', 'string','email'],
+            'email' => ['required', 'string','email', 'unique:users,email'],
             'password' => ['required', 'string']
         ], [
             'required' => 'Это поле обязательно должно быть заполнено',

@@ -14,6 +14,10 @@
             Список категорий
         </a>
 
+        <a href="{{ route('admin.addons') }}"
+           class="sidebar-item {{ request()->routeIs('admin.addons', 'form_addon', 'admin.addon.*') ? 'active' : '' }}">
+            Список дополнений
+        </a>
         <a href="#" class="sidebar-item">Список товаров</a>
         <a href="#" class="sidebar-item">Поступившие заказы</a>
 
@@ -25,7 +29,10 @@
         <a href="#" class="sidebar-item">Статистика</a>
         <a href="#" class="sidebar-item">Отчетность</a>
         <a href="#" class="sidebar-item">Отзывы</a>
-        <a href="#" class="sidebar-item">Сотрудники</a>
+        <a href="{{ route('admin.employee') }}"
+           class="sidebar-item {{ request()->routeIs('admin.employee', 'form_employee', 'admin.employee.*') ? 'active' : '' }}">
+            Сотрудники
+        </a>
 
         <form method="post" action="{{ route('logout') }}">
             @csrf

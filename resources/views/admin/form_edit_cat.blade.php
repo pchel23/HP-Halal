@@ -3,7 +3,7 @@
 @section('title', 'Редактирование категории')
 
 @section('content')
-    <h2>Редактирование</h2>
+    <h2>Редактирование категории</h2>
     <form method="post" action="{{ route('admin.category.update', $category->id) }}">
         @csrf
         @method('PUT')
@@ -14,11 +14,9 @@
             @error('category_name')
                 <span class="error-message">{{ $message }}</span>
             @enderror
-        </div>
 
-        <div class="form-actions" style="margin-top: 20px;">
-            <button type="submit" class="add-btn" style="padding: 10px 20px; cursor: pointer;">Сохранить изменения</button>
-            <a href="{{ route('admin.categories') }}" style="margin-left: 10px;">Отмена</a>
+            <button class="btn-form" type="submit" class="add-btn">Сохранить изменения</button>
+
         </div>
     </form>
 @endsection
